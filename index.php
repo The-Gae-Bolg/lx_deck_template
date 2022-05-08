@@ -66,7 +66,7 @@ $currentSlab = getDeckData("current_slab");
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/deck.css" />
     
-    <title>Deck</title>
+    <title>Deck Excel</title>
   </head>
   <body>
     <input id="value_tracker_1" type="hidden"  name="value_tracker_1" value=<?php echo $tracker_1; ?>>
@@ -147,7 +147,7 @@ $currentSlab = getDeckData("current_slab");
                 <div class="modal-dialog mw-75">
                   <div class="modal-content">
                     <div class="modal-body typeform-body">
-                      <div data-tf-widget="Q9w20G65" data-tf-iframe-props="title=Diagnostico-SCRUM" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
+                    <div data-tf-widget="WIQjHJgv" data-tf-iframe-props="title=Diagnostico inicio EXCEL" data-tf-medium="snippet" style="width:100%;height:400px;"></div><script src="//embed.typeform.com/next/embed.js"></script>
                     </div>
                   </div>
                 </div>

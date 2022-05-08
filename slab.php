@@ -176,14 +176,40 @@
                     <h3 class="subtitle">Meta de aprendizaje</h3>
                     <p class="body">
                       <?php echo $slabGoal;?>
+                      <?php if(isset($imgGoals[$slabNum-1])) {?>   
+                        <div class="text-col"> 
+                          <div id="ts_2" class="text-container" width="100%">
+                            <img class="img-fluid rounded" src=<?php echo $imgGoals[$slabNum-1]?> alt="" />
+                          </div>
+                        </div>
+                      <?php }?>
                     </p>
                   </div>
                   <div class="intro-video video col-lg-6">
-                    <video id="ts_1" controls>
-                      <source  src="<?php echo $slabIntroVideos[$slabNum-1]?>">
-                    </video>
+                    <!--Introdicción-->
+                    <?php if(isset($slabIntroType[$slabNum-1])) {?>
+                      <h3 class="mt-4 subtitle">Introducción</h3>
+                        <div class="text-col"> 
+                        <div id="ts_2" class="text-container" width="100%">
+                        <?php if($slabIntroType[$slabNum-1] === "video") {?>    
+                          <video id="ts_1" controls>
+                            <source  src="<?php echo $slabIntro[$slabNum-1][0]?>">
+                          </video>
+                          <?php } else {?>
+                            <div id="ts_2" class="text-container" width="100%"><?php echo $slabIntro[$slabNum-1][0]?></div>
+                          <?php }?>
+                        </div>
+                        </div>
+                    <?php }?>
                   </div>
                 </div>
+                <?php if(isset($banner[$slabNum-1])) {?>   
+                  <div class="text-col"> 
+                    <div id="ts_2" class="text-container" width="100%">
+                      <img class="img-fluid rounded" src=<?php echo $banner[$slabNum-1]?> alt="" />
+                    </div>
+                  </div>
+                <?php }?>
               </div>
         </div>
       
@@ -191,42 +217,23 @@
     <main class="container w-75">
       
       <h3 class="mt-4 subtitle">Materiales</h3>
-      <div class="materiales  row">
+      <div class="materiales">
         
         <div class="materiales-video col-lg video">
           
-          <?php if($slabMaterialsType == "video") {?>
-            <iframe src="<?php echo $slabMaterials[$slabNum-1]?>" frameborder="0" allow="accelometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <?php if($slabMaterialsType[$slabNum-1] === "video") {?>
+            <iframe src="<?php echo $slabMaterials[$slabNum-1][$slabNum-1]?>" frameborder="0" allow="accelometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             <img id="ts_2" src="img/video-placeholder.jpg" alt="Video materiales" />
+          <?php } elseif($slabMaterialsType[$slabNum-1] === "text") {?>
+            <div id="ts_2" class="material text-container" width="100%"><?php echo $slabMaterials[$slabNum-1][0]?></div>
           <?php } else {?>
-            <iframe id="ts_2" class="material" height="200px" width="100%" frameborder="no" scrolling="no" seamless src="<?php echo $slabMaterials[$slabNum-1]?>"></iframe>
+            <iframe id="ts_2" class="material" height="200px" width="100%" frameborder="no" scrolling="no" seamless src="<?php echo $slabMaterials[$slabNum-1][$slabNum-1]?>"></iframe>
           <?php }?>
-        </div>
-        
-        
-          
-          <?php if(isset($slabTranscriptions[$slabNum-1])) {?>
-            <div class="col-lg text-col">
-              <h4 class="subtiitle">Transcripción</h4>
-              <div class="text-block">
-                <div class="text-content body">
-                  <?= $slabTranscriptions[$slabNum-1]?>
-                  <div class="d-flex justify-content-center align-items-center"> 
-                    <a class="btn btn-primary mt-2" href="<?= $slabTranscriptionDoc[$slabNum-1]?>" target="_blank"><i class="bi bi-download"></i> Descargar Transcripción</a>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          <?php } else {?>
-            <div class="col-lg-4 text-col d-flex justify-content-center align-items-center"> 
-              <a class="btn btn-primary transcript" href="<?= $slabTranscriptionDoc[$slabNum-1];?>" target="_blank"><i class="bi bi-download"></i> Descargar Transcripción</a>
-            </div>
-        <?php }?>
-        
+        </div>  
       </div>
+
       <!--ACTIVIDADES-->
-      <div class="actividades mt-4">
+      <div class="mt-3">
         <h3>Actividades</h3>
         <div>
           <div class="row gx-3">
@@ -281,6 +288,20 @@
           </div>
         </div>
       </div>
+
+      <!--Referencias-->
+      <?php if(isset($slabReferencias[$slabNum-1])) {?>
+          <h3 class="mt-4 subtitle">Referencias</h3>
+          <div class="text-col"> 
+          <div id="ts_2" class="material text-container" width="100%">
+            <ul>
+            <?php for($j = 0;$j<count($slabReferencias[$slabNum-1]);$j++){?>
+              <li><?php echo $slabReferencias[$slabNum-1][$j]?></li>
+            <?php }?>
+            </ul> 
+          </div>
+          </div>
+      <?php }?>
     </main>
     <footer class="p-4 mt-3 d-flex justify-content-center align-items-center">
       Copyright 2021. Tecmilenio.
