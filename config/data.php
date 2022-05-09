@@ -237,17 +237,17 @@ $slabMaterialsType = [
 $slabMaterials = [
 /*Slab 1*/  [
                 'Conoce los principales conceptos de Excel:<br><br>
-                <a href="https://www.youtube.com/watch?v=0hGS45mbBRg" class="estilo-x tracker btn btn-outline-primary" target="_blank">https://www.youtube.com/watch?v=0hGS45mbBRg</a> 
+                <a href="https://www.youtube.com/watch?v=0hGS45mbBRg" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=0hGS45mbBRg</a> 
                 <br/><br/>
-                <a href="http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf" class="estilo-x tracker btn btn-outline-primary" target="_blank">http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf</a>
+                <a href="http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf" class="estilo-x tracker btn btn-primary" target="_blank">http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf</a>
                 <br/><br/>
-                <a href="https://www.youtube.com/watch?v=zv-hH1UKdlg" class="estilo-x tracker btn btn-outline-primary" target="_blank">https://www.youtube.com/watch?v=zv-hH1UKdlg</a> 
+                <a href="https://www.youtube.com/watch?v=zv-hH1UKdlg" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=zv-hH1UKdlg</a> 
                 <br/><br/>
                 ¿Deseas complementar tus conocimientos? Da clic aquí:
                 <br><br>
-                <a href="assets/videos/Creando_una_hoja_de_cálculo_nueva.mp4" class="estilo-x tracker btn btn-outline-primary" target="_blank">Creando una hoja de cálculo nueva.mp4</a> 
+                <a href="assets/videos/Creando_una_hoja_de_cálculo_nueva.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Creando una hoja de cálculo nueva.mp4</a> 
                 <br><br>
-                <a href="assets/videos/Excel. Mi primera interacción con Excel" class="estilo-x tracker btn btn-outline-primary" target="_blank">Excel. Mi primera interacción con Excel.mp4</a>'
+                <a href="assets/videos/Excel. Mi primera interacción con Excel" class="estilo-x tracker btn btn-primary" target="_blank">Excel. Mi primera interacción con Excel.mp4</a>'
             ], 
 /*Slab 2*/  [
                 'Aprende a manejar los conceptos de libro, hoja y celdas:<br><br>
