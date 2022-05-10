@@ -118,6 +118,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -176,13 +179,6 @@
                     <h3 class="subtitle">Meta de aprendizaje</h3>
                     <p class="body">
                       <?php echo $slabGoal;?>
-                      <?php if(isset($imgGoals[$slabNum-1])) {?>   
-                        <div class="text-col"> 
-                          <div id="ts_2" class="text-container" width="100%">
-                            <img class="img-fluid rounded" src=<?php echo $imgGoals[$slabNum-1]?> alt="" />
-                          </div>
-                        </div>
-                      <?php }?>
                     </p>
                   </div>
                   <div class="intro-video video col-lg-6">
@@ -196,7 +192,14 @@
                             <source  src="<?php echo $slabIntro[$slabNum-1][0]?>">
                           </video>
                           <?php } else {?>
-                            <div id="ts_2" class="text-container" width="100%"><?php echo $slabIntro[$slabNum-1][0]?></div>
+                              <?php if(isset($imgGoals[$slabNum-1])) {?>   
+                                <div class="text-col"> 
+                                  <div id="ts_2" class="text-container" width="100%">
+                                    <img style="height: 300px;" class="heading-img" src=<?php echo $imgGoals[$slabNum-1]?> alt="" />
+                                  </div>
+                                </div>
+                              <?php }?>
+                            <div id="ts_2" class="text-container" width="100%"><br><?php echo $slabIntro[$slabNum-1][0]?></div>
                           <?php }?>
                         </div>
                         </div>
@@ -220,15 +223,77 @@
       <div class="materiales">
         
         <div class="materiales-video col-lg video">
-          
-          <?php if($slabMaterialsType[$slabNum-1] === "video") {?>
-            <iframe src="<?php echo $slabMaterials[$slabNum-1][$slabNum-1]?>" frameborder="0" allow="accelometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            <img id="ts_2" src="img/video-placeholder.jpg" alt="Video materiales" />
-          <?php } elseif($slabMaterialsType[$slabNum-1] === "text") {?>
-            <div id="ts_2" class="material text-container" width="100%"><?php echo $slabMaterials[$slabNum-1][0]?></div>
-          <?php } else {?>
-            <iframe id="ts_2" class="material" height="200px" width="100%" frameborder="no" scrolling="no" seamless src="<?php echo $slabMaterials[$slabNum-1][$slabNum-1]?>"></iframe>
-          <?php }?>
+
+          <div class="w-100 d-flex flex-wrap justify-content-around">
+            <!--VideoYoutube-->
+            <?php if(isset($materialYoutube[$slabNum-1])) {?>
+
+              <?php for($j = 0;$j<count($materialYoutube[$slabNum-1]);$j++){?>
+                <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width:300px !important;">
+                  <img class="card-img-top rounded-0" src="<?php echo $materialYoutube[$slabNum-1][$j][0]?>" alt="Card image cap">
+                  <h5 class="card-title text-center mt-4"><?php echo $materialYoutube[$slabNum-1][$j][1]?></h5>
+                    <div class="d-flex justify-content-around align-items-center my-4" height="50px">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="<?php echo $materialYoutube[$slabNum-1][$j][2]?>" data-target="#myModal">
+                        Visualizar
+                      </button>
+                    </div>
+                </div>
+              <?php }?>
+
+            <?php }?>
+
+            <!--Pagina-->
+
+            <?php if(isset($materialPage[$slabNum-1])) {?>
+
+              <?php for($j = 0;$j<count($materialPage[$slabNum-1]);$j++){?>
+                <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width:300px !important;">
+                  <img class="card-img-top rounded-0" src="<?php echo $materialPage[$slabNum-1][$j][0]?>" alt="Card image cap">
+                  <h5 class="card-title text-center mt-4"><?php echo $materialPage[$slabNum-1][$j][1]?></h5>
+                    <div class="d-flex justify-content-around align-items-center my-4" height="50px">
+                      <a href="<?php echo $materialPage[$slabNum-1][$j][2]?>" class="btn btn-primary" target="_blank">Visualizar &nbsp; <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+              <?php }?>
+
+            <?php }?>
+
+            <!--PDF-->
+
+            <?php if(isset($materialPdf[$slabNum-1])) {?>
+
+              <?php for($j = 0;$j<count($materialPdf[$slabNum-1]);$j++){?>
+                <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width:300px !important;">
+                  <img class="card-img-top rounded-0" src="<?php echo $materialPdf[$slabNum-1][$j][0]?>" alt="Card image cap">
+                  <h5 class="card-title text-center mt-4"><?php echo $materialPdf[$slabNum-1][$j][1]?></h5>
+                    <div class="d-flex justify-content-around align-items-center my-4" height="50px">
+                      <a href="<?php echo $materialPdf[$slabNum-1][$j][2]?>" class="btn btn-primary" target="_blank">Ver &nbsp; <i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+              <?php }?>
+
+            <?php }?>
+
+            <!--Video-->
+
+            <?php if(isset($materialVideo[$slabNum-1])) {?>
+
+              <?php for($j = 0;$j<count($materialVideo[$slabNum-1]);$j++){?>
+                <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width:300px !important;">
+                  <img class="card-img-top rounded-0" src="<?php echo $materialVideo[$slabNum-1][$j][0]?>" alt="Card image cap">
+                  <h5 class="card-title text-center mt-4"><?php echo $materialVideo[$slabNum-1][$j][1]?></h5>
+                    <div class="d-flex justify-content-around align-items-center my-4" height="50px">
+                      <button type="button" class="btn btn-primary video-btn" data-toggle="modal" data-src="<?php echo $materialVideo[$slabNum-1][$j][2]?>" data-target="#myModal">
+                        Visualizar
+                      </button>
+                      <a href="<?php echo $materialVideo[$slabNum-1][$j][2]?>" class="btn btn-primary" download="<?php echo $materialVideo[$slabNum-1][$j][3]?>">Descargar &nbsp; <i class="bi bi-download"></i></a>
+                    </div>
+                </div>
+              <?php }?>
+
+            <?php }?>
+              
+          </div>
         </div>  
       </div>
 
@@ -275,7 +340,7 @@
               <div class="act-card row  <?php if($act2 == 0) { echo "disabled";}?>">
                 <div class="col-7">
                   <h3 class="heading blue-text">Autovaloración</h3>
-                  <a href="autoev.php" class="<?php if($act2 == 0) { echo "btn-disabled";} else {echo "btn btn-primary next-btn";}?>">
+                  <a href="autoev.php" style="bottom:-52px !important;" class="<?php if($act2 == 0) { echo "btn-disabled";} else {echo "btn btn-primary next-btn";}?>">
                     <i class="<?php if($act2 == 0) { echo "hidden";} else {echo "bi bi-arrow-right";}?>"></i>
                   </a>
                 </div>
@@ -291,28 +356,65 @@
 
       <!--Referencias-->
       <?php if(isset($slabReferencias[$slabNum-1])) {?>
-          <h3 class="mt-4 subtitle">Referencias</h3>
-          <div class="text-col"> 
-          <div id="ts_2" class="material text-container" width="100%">
-            <ul>
-            <?php for($j = 0;$j<count($slabReferencias[$slabNum-1]);$j++){?>
-              <li><?php echo $slabReferencias[$slabNum-1][$j]?></li>
-            <?php }?>
-            </ul> 
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                <h3>Referencias</h3>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <ul>
+                  <?php for($j = 0;$j<count($slabReferencias[$slabNum-1]);$j++){?>
+                    <li><?php echo $slabReferencias[$slabNum-1][$j]?></li>
+                  <?php }?>
+                </ul> 
+              </div>
+            </div>
           </div>
-          </div>
+        </div>
       <?php }?>
+
+      <!--Modal Youtube/Videos-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>        
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div> 
+      <!--Modal Youtube-->
+          
     </main>
     <footer class="p-4 mt-3 d-flex justify-content-center align-items-center">
       Copyright 2021. Tecmilenio.
     </footer>
-
     <!--Scripts-->
-    <script
+    <script 
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="js/slab.js"></script>
+    <script src="js/modalVideo.js"></script>
   </body>
 </html>

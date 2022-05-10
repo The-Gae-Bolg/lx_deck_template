@@ -14,6 +14,11 @@ main h3{
 main{
     min-height: calc(100vh - 5rem - 76px - 4rem - 16px);
 }
+/*Resalta texto blanco*/
+highlight{
+    font-weight: bold !important;
+    color: #fff;
+}
 
 .paso, .subpaso{
     position: relative;
@@ -22,6 +27,10 @@ main{
     padding-left: 2rem;
     margin-bottom: 1rem;
     border-radius: 1.5rem;
+}
+
+#puzzleVideo{
+    width: 90% !important;
 }
 
 .incisos h3{

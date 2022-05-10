@@ -118,7 +118,7 @@ $slabGoals = [
 
 $imgGoals = [
     null,
-    null,
+    "img/act/iStock-1249379723.jpg",
     "img/act/iStock-1189508207.jpg",	
     "img/act/iStock-827632110.jpg",
     "img/act/iStock-635969404.jpg",
@@ -203,237 +203,542 @@ $slabIntro = [
    * Ruta del archivo -> assets/img/act/
 */ 
 $banner = [
-    null, //Slab 1
-    "img/act/iStock-1249379723.jpg", //Slab 2
-    null, //Slab 3
-    null, //Slab 4
-    null, //Slab 5
-    null, //Slab 6
-    null, //Slab 7
-    null, //Slab 8
-    null, //Slab 9
-    null //Slab 10
+    
 ];
 
 //-- Tipos de Materiales --
 /* 
-   FORMATO:
-   * Indicar tipo de material -> audio, video o texto
-*/ 
-$slabMaterialsType = [
-    "text", //Slab 1
-    "text", //Slab 2
-    "text", //Slab 3
-    "text", //Slab 4
-    "text", //Slab 5
-    "text", //Slab 6
-    "text", //Slab 7
-    "text", //Slab 8
-    "text", //Slab 9
-    "text" //Slab 10
+   FORMATO: 
+   * Indicar tipo de material 
+*/
+
+//Videos YouTube
+$materialYoutube = [
+    [   //Slab 1
+        [
+            'img/materials/pre-load-1.png',
+            'Clase 1 Microsoft Excel 2010 - Introduccion',
+            'https://www.youtube.com/embed/0hGS45mbBRg'
+        ],
+        [
+            'img/materials/pre-load-3.png',
+            'Curso básico de EXCEL | Aprende a usar excel paso a paso',
+            'https://www.youtube.com/embed/zv-hH1UKdlg'
+        ]
+    ],
+    [   //Slab 2
+        [
+            'img/materials/pre-load-6.png',
+            'Conceptos basicos de excel : libros, hojas, celdas',
+            'https://www.youtube.com/embed/U-l7ri8j4uk'
+        ], 
+    ],
+    [   //Slab 3
+          
+    ],
+    [   //Slab 4
+
+    ],
+    [   //Slab 5
+  
+    ],
+    [   //Slab 6
+    
+    ],
+    [   //Slab 7
+        [
+            'img/materials/pre-load-36.png',
+            'Inmovilizar fila y columna en hoja de cálculo de Google Drive',
+            'https://www.youtube.com/embed/73vkPFaYzIo'
+        ], 
+        [
+            'img/materials/pre-load-37.png',
+            'Cómo ajustar hoja de calculo de Excel a la página de impresión.',
+            'https://www.youtube.com/embed/cTeRBr2gVrs'
+        ]
+    ],
+    [   //Slab 8
+        [
+            'img/materials/pre-load-43.png',
+            'Excel - gestión de hojas y libros',
+            'https://www.youtube.com/embed/31iSPlAauHo'
+        ],
+    ],
 ];
 
-//-- Materiales --
-$slabMaterials = [
-/*Slab 1*/  [
-                'Conoce los principales conceptos de Excel:<br><br>
-                <a href="https://www.youtube.com/watch?v=0hGS45mbBRg" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=0hGS45mbBRg</a> 
-                <br/><br/>
-                <a href="http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf" class="estilo-x tracker btn btn-primary" target="_blank">http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf</a>
-                <br/><br/>
-                <a href="https://www.youtube.com/watch?v=zv-hH1UKdlg" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=zv-hH1UKdlg</a> 
-                <br/><br/>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <a href="assets/videos/Creando_una_hoja_de_cálculo_nueva.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Creando una hoja de cálculo nueva.mp4</a> 
-                <br><br>
-                <a href="assets/videos/Excel. Mi primera interacción con Excel" class="estilo-x tracker btn btn-primary" target="_blank">Excel. Mi primera interacción con Excel.mp4</a>'
-            ], 
-/*Slab 2*/  [
-                'Aprende a manejar los conceptos de libro, hoja y celdas:<br><br>
-                <a href="https://exceltotal.com/libros-hojas-y-celdas/" class="estilo-x tracker btn btn-primary" target="_blank">https://exceltotal.com/libros-hojas-y-celdas/</a> 
-                <br/><br/>
-                <a href="https://www.aboutespanol.com/partes-de-la-hoja-de-calculo-1790981" class="estilo-x tracker btn btn-primary" target="_blank">https://www.aboutespanol.com/partes-de-la-hoja-de-calculo-1790981</a>
-                <br/><br/>
-                Te recomendamos revisar el siguiente video para reforzar lo aprendido:
-                <br><br>
-                <a href="https://www.youtube.com/watch?v=U-l7ri8j4uk" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=U-l7ri8j4uk</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Función autocompletar: <br><a href="assets/videos/1. La función de autocompletado en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">La función de autocompletar en Excel.mp4</a></li>
-                    <li>Función deshacer: <br><a href="assets/videos/2. Cómo deshacer un cambio en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo deshacer un cambio en Excel.mp4</a></li>
-                    <li>Agregar comentarios: <br><a href="assets/videos/3. Añadir comentarios a una hoja de Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Añadir comentarios a una hoja de Excel.mp4</a></li>
-                    <li>Guardar y exportar:  <br><a href="assets/videos/4. Cómo guardar y exportar hojas de cálculo.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo guardar y exportar hojas de cálculo.mp4</a></li>
-                    <li>Opciones de impresión: <br><a href="assets/videos/5. Opciones de impresión para hojas de cálculo.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Opciones de impresión para hojas de cálculo.mp4</a></li>
-                </ol>'
-            ],
-/*Slab 3*/  [
-                'Aprende a usar fórmulas y funciones en Excel<br><br>
-                <a href="https://www.cofide.mx/blog/excel-crea-formulas-y-funciones" class="estilo-x tracker btn btn-primary" target="_blank">https://www.cofide.mx/blog/excel-crea-formulas-y-funciones</a> 
-                <br/><br/>
-                <a href="https://support.microsoft.com/es-es/office/informaci%C3%B3n-general-sobre-f%C3%B3rmulas-en-excel-ecfdc708-9162-49e8-b993-c311f47ca173" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/informaci%C3%B3n-general-sobre-f%C3%B3rmulas-en-excel-ecfdc708-9162-49e8-b993-c311f47ca173</a>
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/funciones-de-excel-por-orden-alfab%C3%A9tico-b3944572-255d-4efb-bb96-c6d90033e188" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/funciones-de-excel-por-orden-alfab%C3%A9tico-b3944572-255d-4efb-bb96-c6d90033e188</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Crear fórmulas básicas en Excel: <br><a href="assets/videos/Creando fórmulas sencillas en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Creando fórmulas sencillas en Excel.mp4</a></li>
-                    <li>Conocer la barra de fórmulas: <br><a href="assets/videos/La barra de fórmulas en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">La barra de fórmulas en Excel.mp4</a></li>
-                    <li>Cómo copiar fórmulas a celdas adyacentes: <br><a href="assets/videos/Copiando fórmulas a celdas adyacentes.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Copiando fórmulas a celdas adyacentes.mp4</a></li>
-                    <li>Uso de la función IF y de los operadores relacionales:  <br><a href="assets/videos/Usando funciones IF y operadores relacionales.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Usando funciones IF y operadores relacionales.mp4</a></li>
-                    <li>Uso de la función BUSCARV: <br><a href="assets/videos/Obtener datos de una tabla con la función BUSCARV.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Obtener datos de una tabla con la función BUSCARV.mp4</a></li>
-                    <li>Uso de la familia de funciones CONTAR.SI <br><a href="assets/videos/Cómo utilizar la familia de funciones CONTAR.SI.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo utilizar la familia de funciones CONTAR.SI.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 4*/  [
-                'Conoce como aplicar  los estilos a una celda u hoja de cálculo:<br><br>
-                <a href="https://blogdeuninformatico.com/estilos-y-formatos-de-celda-en-excel/" class="estilo-x tracker btn btn-primary" target="_blank">https://blogdeuninformatico.com/estilos-y-formatos-de-celda-en-excel/</a> 
-                <br/><br/>
-                <a href="https://support.microsoft.com/es-es/office/aplicar-crear-o-quitar-un-estilo-de-celda-472213bf-66bd-40c8-815c-594f0f90cd22" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/aplicar-crear-o-quitar-un-estilo-de-celda-472213bf-66bd-40c8-815c-594f0f90cd22</a>
-                <br/><br/>
-                Refuerza  el tema de tablas en Excel: 
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/descripci%C3%B3n-general-de-las-tablas-de-excel-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/descripci%C3%B3n-general-de-las-tablas-de-excel-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Uso de los estilos y fuentes: <br><a href="assets/videos/Estilos y fuentes tipográficas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Estilos y fuentes tipográficas.mp4</a></li>
-                    <li>Cómo ajustar y alinear texto: <br><a href="assets/videos/Ajustes y alineación de texto.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Ajustes y alineación de texto.mp4</a></li>
-                    <li>Aplicación de bordes:  <br><a href="assets/videos/Bordes en una hoja de cálculo.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Bordes en una hoja de cálculo.mp4</a></li>
-                    <li>Conocer los diferentes formatos de datos:   <br><a href="assets/videos/Explorando los formatos de datos.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Explorando los formatos de datos.mp4</a></li>
-                    <li>Uso de los formatos condicionales:  <br><a href="assets/videos/Usando formatos condicionales.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Usando formatos condicionales.mp4</a></li>
-                    <li>Uso y aplicación de tablas:  <br><a href="assets/videos/Trabajo con tablas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Trabajo con tablas.mp4</a></li>
-                    <li>Insertar imágenes y formas:  <br><a href="assets/videos/Cómo insertar imágenes y formas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo insertar imágenes y formas.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 5*/  [
-                'Aprende a aplicar los estilos a una celda u hoja de cálculo:<br><br>
-                <a href="https://www.ufasta.edu.ar/wp-content/uploads/2016/12/03-Manejo-de-Filas-Columnas-Celdas-y-Rangos.pdf" class="estilo-x tracker btn btn-primary" target="_blank">https://www.ufasta.edu.ar/wp-content/uploads/2016/12/03-Manejo-de-Filas-Columnas-Celdas-y-Rangos.pdf</a> 
-                <br/><br/>
-                <a href="https://eltiotech.com/capitulo-6-domina-filas-y-columnas-de-excel/" class="estilo-x tracker btn btn-primary" target="_blank">https://eltiotech.com/capitulo-6-domina-filas-y-columnas-de-excel/</a>
-                <br/><br/>
-                Refuerza el tema de anchos y altos de columnas en Excel:
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/cambiar-el-ancho-de-las-columnas-y-el-alto-de-las-filas-72f5e3cc-994d-43e8-ae58-9774a0905f46#:~:text=Seleccione%20la%20fila%20o%20filas,despu%C3%A9s%2C%20haga%20clic%20en%20Aceptar" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/cambiar-el-ancho-de-las-columnas-y-el-alto-de-las-filas...</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Modificar filas y columnas: <br><a href="assets/videos/Cómo modificar filas y columnas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo modificar filas y columnas.mp4</a></li>
-                    <li>Ocultar filas y columnas: <br><a href="assets/videos/Ajustes y alineación de texto.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Ajustes y alineación de texto.mp4</a></li>
-                    <li>Buscar y reemplazar: <br><a href="assets/videos/Cómo buscar y reemplazar datos en una hoja de cálculo.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo buscar y reemplazar datos en una hoja de cálculo.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 6*/  [
-                'Aprende a crear gráficos básicos en Excel:<br><br>
-                <a href="https://www.xataka.com/basics/como-hacer-grafica-basica-excel" class="estilo-x tracker btn btn-primary" target="_blank">https://www.xataka.com/basics/como-hacer-grafica-basica-excel</a> 
-                <br/><br/>
-                <a href="https://excelyvba.com/graficos-excel-guia-completa/" class="estilo-x tracker btn btn-primary" target="_blank">https://excelyvba.com/graficos-excel-guia-completa/</a>
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/crear-un-gr%C3%A1fico-de-principio-a-fin-0baf399e-dd61-4e18-8a73-b3fd5d5680c2" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/crear-un-gr%C3%A1fico-de-principio-a-fin-0baf399e-dd61-4e18-8a73-b3fd5d5680c2</a> 
-                <br><br>
-                <a href="https://es.justexw.com/tutoriales/como-hacer-graficos-en-excel" class="estilo-x tracker btn btn-primary" target="_blank">https://es.justexw.com/tutoriales/como-hacer-graficos-en-excel</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Conocer los tipos de gráficos: <br><a href="assets/videos/Explorando los tipos de gráficos.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Explorando los tipos de gráficos.mp4</a></li>
-                    <li>Utilización de los diseños y estilos de gráficos: <br><a href="assets/videos/Diseño y estilo de las gráficos.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Diseño y estilo de las gráficos.mp4</a></li>
-                    <li>Creación de sparklines:  <br><a href="assets/videos/Creación de sparklines.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Creación de sparklines.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 7*/  [
-                'Aprende a ajustar la vista en una hoja de cálculo:<br><br>
-                <a href="https://www.customguide.com/es/excel/vista-de-una-hoja-de-calculo" class="estilo-x tracker btn btn-primary" target="_blank">https://www.customguide.com/es/excel/vista-de-una-hoja-de-calculo</a> 
-                <br/><br/>
-                <a href="https://helpcenter.onlyoffice.com/es/onlyoffice-editors/onlyoffice-spreadsheet-editor/helpfulhints/navigation.aspx" class="estilo-x tracker btn btn-primary" target="_blank">https://helpcenter.onlyoffice.com/es/onlyoffice-editors/onlyoffice-spreadsheet-editor/helpfulhints/navigation.aspx</a>
-                <br><br>
-                <a href="https://www.aulafacil.com/cursos/google/hojas-de-calculo-google-docs/inmovilizar-filas-o-columnas-l13689" class="estilo-x tracker btn btn-primary" target="_blank">https://www.aulafacil.com/cursos/google/hojas-de-calculo-google-docs/inmovilizar-filas-o-columnas-l13689</a> 
-                <br><br>
-                <a href="https://www.youtube.com/watch?v=cTeRBr2gVrs" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=cTeRBr2gVrs</a> 
-                <br><br>
-                Refuerza el tema de la movilización/inmovilización de paneles:              
-                <br><br>
-                <a href="https://www.youtube.com/watch?v=73vkPFaYzIo" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=73vkPFaYzIo</a> 
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/dividir-paneles-para-bloquear-filas-o-columnas-en-%C3%A1reas-independientes-de-la-hoja-de-c%C3%A1lculo-516a7001-b3ed-4122-a6bb-fd6d4a9d6434" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/dividir-paneles-para-bloquear-filas-o-columnas...</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Bloquear y desbloquear paneles: <br><a href="assets/videos/Bloqueo y desbloqueo de paneles.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Bloqueo y desbloqueo de paneles.mp4</a></li>
-                    <li>Dividir la pantalla: <br><a href="assets/videos/Cómo dividir la pantalla horizontal y verticalmente.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo dividir la pantalla de Excel horizontal y verticalmente.mp4</a></li>
-                    <li>Colapsar o expandir las vistas:  <br><a href="assets/videos/Cómo colapsar o expandir las vistas con esquemas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo colapsar o expandir las vistas con esquemas.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 8*/  [
-                'Aprende  a manejar múltiples libros y hojas de cálculo: <br><br>
-                <a href="https://exceltotal.com/manejo-de-hojas-en-excel-2013/" class="estilo-x tracker btn btn-primary" target="_blank">https://exceltotal.com/manejo-de-hojas-en-excel-2013/</a> 
-                <br/><br/>
-                <a href="https://exceltotal.com/hacer-referencia-a-celdas-de-otras-hojas-en-excel/" class="estilo-x tracker btn btn-primary" target="_blank">https://exceltotal.com/hacer-referencia-a-celdas-de-otras-hojas-en-excel/</a>
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/mover-o-copiar-hojas-de-c%C3%A1lculo-o-los-datos-que-contienen-47207967-bbb2-4e95-9b5c-3c174aa69328" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/mover-o-copiar-hojas-de-c%C3%A1lculo-o-los-datos-que-contienen...</a> 
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/agrupar-hojas-de-c%C3%A1lculo-4e1f7747-3d63-4fd7-8a36-838b05adc0f0" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/agrupar-hojas-de-c%C3%A1lculo-4e1f7747-3d63-4fd7-8a36-838b05adc0f0</a> 
-                <br><br>
-                <a href="https://edu.gcfglobal.org/es/microsoft-excel-2010/copiar-y-mover-una-hoja-de-calculo/1/" class="estilo-x tracker btn btn-primary" target="_blank">https://edu.gcfglobal.org/es/microsoft-excel-2010/copiar-y-mover-una-hoja-de-calculo/1/</a> 
-                <br><br>
-                <a href="https://exceltotal.com/hacer-referencia-a-celdas-de-otras-hojas-en-excel/" class="estilo-x tracker btn btn-primary" target="_blank">https://exceltotal.com/hacer-referencia-a-celdas-de-otras-hojas-en-excel/</a> 
-                <br><br>
-                <a href="https://www.youtube.com/watch?v=31iSPlAauHo" class="estilo-x tracker btn btn-primary" target="_blank">https://www.youtube.com/watch?v=31iSPlAauHo</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Administrar hojas de un libro: <br><a href="assets/videos/Cómo agregar, renombrar y borrar hojas en un libro.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo agregar, renombrar y borrar hojas en un libro.mp4</a></li>
-                    <li>Enlazar y hojas de cálculo: <br><a href="assets/videos/Cómo ligar libros y hojas de cálculo con fórmulas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo ligar libros y hojas de cálculo con fórmulas.mp4</a></li>
-                    <li>Mantenimiento de ligas: <br><a href="assets/videos/Localizando y manteniendo enlaces en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Localizando y manteniendo enlaces en Excel.mp4</a></li>
-                    <li>Mostrar diferentes libros en pantalla: <br><a href="assets/videos/Mostrar múltiples libros en pantalla.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Mostrar múltiples libros en pantalla.mp4</a></li>
-                    <li>Administrar hojas de cálculo: <br><a href="assets/videos/Mover, copiar y agrupar hojas de cálculo.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Mover, copiar y agrupar hojas de cálculo.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 9*/  [
-                'Aprende a gestionar los datos en Excel: <br><br>
-                <a href="https://help.highbond.com/helpdocs/add-ins-excel/14/user-guide/es/Content/working_with_data/sort_filter_data.htm" class="estilo-x tracker btn btn-primary" target="_blank">https://help.highbond.com/helpdocs/add-ins-excel/14/user-guide/es/Content/working_with_data/sort_filter_data.htm</a> 
-                <br/><br/>
-                <a href="https://exceltotal.com/filtros-en-excel/" class="estilo-x tracker btn btn-primary" target="_blank">https://exceltotal.com/filtros-en-excel/</a>
-                <br><br>
-                <a href="https://www.gerencie.com/para-que-sirven-los-filtros-en-excel.html" class="estilo-x tracker btn btn-primary" target="_blank">https://www.gerencie.com/para-que-sirven-los-filtros-en-excel.html</a> 
-                <br><br>
-                <a href="https://guiastematicas.bibliotecas.uc.cl/c.php?g=990565&p=7816616" class="estilo-x tracker btn btn-primary" target="_blank">https://guiastematicas.bibliotecas.uc.cl/c.php?g=990565&p=7816616</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Para eliminar datos duplicados:  <br><a href="assets/videos/Cómo eliminar datos duplicados en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo eliminar datos duplicados en Excel.mp4</a></li>
-                    <li>El uso de filtros: <br><a href="assets/videos/Cómo usar filtros en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo usar filtros en Excel.mp4</a></li>
-                    <li>Combinación de datos: <br><a href="assets/videos/Dividiendo y combinando datos de columnas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Dividiendo y combinando datos de columnas.mp4</a></li>
-                    <li>Para ordenar de datos: <br><a href="assets/videos/Ordenando datos en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Ordenando datos en Excel.mp4</a></li>
-                    <li>Para validar datos: <br><a href="assets/videos/Usar herramientas de validación de datos.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Usar herramientas de validación de datos.mp4</a></li>
-                </ol>'
-            ], 
-/*Slab 10*/ [
-                'Aprende seguridad y trabajo colaborativo en Excel: <br><br>
-                <a href="https://www.softzone.es/2017/03/29/excel-2016-ya-permite-trabajo-colaborativo-traves-office-365/" class="estilo-x tracker btn btn-primary" target="_blank">https://www.softzone.es/2017/03/29/excel-2016-ya-permite-trabajo-colaborativo-traves-office-365/</a> 
-                <br/><br/>
-                <a href="https://support.microsoft.com/es-es/office/compartir-el-libro-de-excel-con-otros-usuarios-8d8a52bb-03c3-4933-ab6c-330aabf1e589" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/compartir-el-libro-de-excel-con-otros-usuarios-8d8a52bb-03c3-4933-ab6c-330aabf1e589</a>
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/bloquear-o-desbloquear-%C3%A1reas-espec%C3%ADficas-de-una-hoja-de-c%C3%A1lculo-protegida-75481b72-db8a-4267-8c43-042a5f2cd93a" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/bloquear-o-desbloquear-%C3%A1reas-espec%C3%ADficas-de-una-hoja...</a> 
-                <br><br>
-                <a href="https://support.microsoft.com/es-es/office/proteger-un-archivo-de-excel-7359d4ae-7213-4ac2-b058-f75e9311b599" class="estilo-x tracker btn btn-primary" target="_blank">https://support.microsoft.com/es-es/office/proteger-un-archivo-de-excel-7359d4ae-7213-4ac2-b058-f75e9311b599</a> 
-                <br><br>
-                ¿Deseas complementar tus conocimientos? Da clic aquí:
-                <br><br>
-                <ol>
-                    <li>Para poder compartir libros:  <br><a href="assets/videos/Cómo compartir libros de Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo compartir libros de Excel.mp4</a></li>
-                    <li>Cómo proteger hojas y bloquear celdas: <br><a href="assets/videos/Cómo proteger hojas y bloquear celdas.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Cómo proteger hojas y bloquear celdas.mp4</a></li>
-                    <li>Para proteger libros: <br><a href="assets/videos/Protegiendo libros en Excel.mp4" class="estilo-x tracker btn btn-primary" target="_blank">Protegiendo libros en Excel.mp4</a></li>
-                </ol>'
-            ],  
+//Pagina
+$materialPage = [
+    [   //Slab 1
+        [
+            'img/materials/pre-load-2.png',
+            'Introducción a Excel',
+            'http://www.agro.unlpam.edu.ar/licenciatura/informatica/sept/Apuntes%20excel.pdf'
+        ]
+    ],
+    [   //Slab 2
+        [
+            'img/materials/pre-load-7.png',
+            'Qué es un libro de Excel',
+            'https://exceltotal.com/libros-hojas-y-celdas/'
+        ],
+        [
+            'img/materials/pre-load-8.png',
+            'Partes de la hoja de cálculo',
+            'https://www.aboutespanol.com/partes-de-la-hoja-de-calculo-1790981'
+        ]   
+    ],
+    [   //Slab 3
+        [
+            'img/materials/pre-load-10.png',
+            'Excel crea fórmulas y funciones',
+            'https://www.cofide.mx/blog/excel-crea-formulas-y-funciones'
+        ],
+        [
+            'img/materials/pre-load-11.png',
+            'Información general sobre fórmulas en Excel',
+            'https://support.microsoft.com/es-es/office/informaci%C3%B3n-general-sobre-f%C3%B3rmulas-en-excel-ecfdc708-9162-49e8-b993-c311f47ca173'
+        ],
+        [
+            'img/materials/pre-load-12.png',
+            'Funciones de Excel (por orden alfabético)',
+            'https://support.microsoft.com/es-es/office/funciones-de-excel-por-orden-alfab%C3%A9tico-b3944572-255d-4efb-bb96-c6d90033e188'
+        ]
+    ],
+    [   //Slab 4
+        [
+            'img/materials/pre-load-15.png',
+            'Estilos y formatos de celda en Excel',
+            'https://blogdeuninformatico.com/estilos-y-formatos-de-celda-en-excel/'
+        ],
+        [
+            'img/materials/pre-load-16.png',
+            'Aplicar, crear o quitar un estilo de celda',
+            'https://support.microsoft.com/es-es/office/aplicar-crear-o-quitar-un-estilo-de-celda-472213bf-66bd-40c8-815c-594f0f90cd22'
+        ],
+        [
+            'img/materials/pre-load-17.png',
+            'Descripción general de las tablas de Excel',
+            'https://support.microsoft.com/es-es/office/descripci%C3%B3n-general-de-las-tablas-de-excel-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c'
+        ]
+    ],
+    [   //Slab 5
+        [
+            'img/materials/pre-load-23.png',
+            'Manejo de filas, columnas, celdas y rangos',
+            'https://www.ufasta.edu.ar/wp-content/uploads/2016/12/03-Manejo-de-Filas-Columnas-Celdas-y-Rangos.pdf'
+        ],
+        [
+            'img/materials/pre-load-24.png',
+            'Capítulo 6: Domina el manejo de Filas y Columnas en Excel',
+            'https://eltiotech.com/capitulo-6-domina-filas-y-columnas-de-excel/'
+        ],
+        [
+            'img/materials/pre-load-25.png',
+            'Cambiar el ancho de las columnas y el alto de las filas',
+            'https://support.microsoft.com/es-es/office/cambiar-el-ancho-de-las-columnas-y-el-alto-de-las-filas-72f5e3cc-994d-43e8-ae58-9774a0905f46#:~:text=Seleccione%20la%20fila%20o%20filas,despu%C3%A9s%2C%20haga%20clic%20en%20Aceptar'
+        ]
+    ],
+    [   //Slab 6
+        [
+            'img/materials/pre-load-29.png',
+            'Vista de una Hoja de Cálculo',
+            'https://www.customguide.com/es/excel/vista-de-una-hoja-de-calculo'
+        ],
+        [
+            'img/materials/pre-load-30.png',
+            'Gráficos Excel - Todo lo que necesitas saber',
+            'https://excelyvba.com/graficos-excel-guia-completa/'
+        ],
+        [
+            'img/materials/pre-load-31.png',
+            'Crear un gráfico de principio a fin',
+            'https://support.microsoft.com/es-es/office/crear-un-gr%C3%A1fico-de-principio-a-fin-0baf399e-dd61-4e18-8a73-b3fd5d5680c2'
+        ],
+        [
+            'img/materials/pre-load-32.png',
+            'Cómo hacer gráficos en Excel',
+            'https://es.justexw.com/tutoriales/como-hacer-graficos-en-excel'
+        ]
+    ],
+    [   //Slab 7
+        [
+            'img/materials/pre-load-38.png',
+            'Vista de una Hoja de Cálculo',
+            'https://www.customguide.com/es/excel/vista-de-una-hoja-de-calculo'
+        ],
+        [
+            'img/materials/pre-load-39.png',
+            'Configuración de la vista y herramientas de navegación',
+            'https://helpcenter.onlyoffice.com/es/onlyoffice-editors/onlyoffice-spreadsheet-editor/helpfulhints/navigation.aspx'
+        ],
+        [
+            'img/materials/pre-load-40.png',
+            'Inmovilizar filas o columnas',
+            'https://www.aulafacil.com/cursos/google/hojas-de-calculo-google-docs/inmovilizar-filas-o-columnas-l13689'
+        ],
+        [
+            'img/materials/pre-load-41.png',
+            'Dividir paneles para bloquear filas o columnas',
+            'https://support.microsoft.com/es-es/office/dividir-paneles-para-bloquear-filas-o-columnas-en-%C3%A1reas-independientes-de-la-hoja-de-c%C3%A1lculo-516a7001-b3ed-4122-a6bb-fd6d4a9d6434'
+        ]
+    ],
+    [   //Slab 8
+        [
+            'img/materials/pre-load-44.png',
+            'Manejo de hojas en excel 2013',
+            'https://exceltotal.com/manejo-de-hojas-en-excel-2013/'
+        ],
+        [
+            'img/materials/pre-load-45.png',
+            'Hacer referencia a celdas de otras hojas en excel',
+            'https://exceltotal.com/hacer-referencia-a-celdas-de-otras-hojas-en-excel/'
+        ],
+        [
+            'img/materials/pre-load-46.png',
+            'Mover o copiar hojas de cálculo o los datos que contienen',
+            'https://support.microsoft.com/es-es/office/mover-o-copiar-hojas-de-c%C3%A1lculo-o-los-datos-que-contienen-47207967-bbb2-4e95-9b5c-3c174aa69328'
+        ],
+        [
+            'img/materials/pre-load-47.png',
+            'Agrupar hojas de cálculo',
+            'https://support.microsoft.com/es-es/office/agrupar-hojas-de-c%C3%A1lculo-4e1f7747-3d63-4fd7-8a36-838b05adc0f0'
+        ],
+        [
+            'img/materials/pre-load-48.png',
+            'Copiar y mover una hoja de cálculo',
+            'https://edu.gcfglobal.org/es/microsoft-excel-2010/copiar-y-mover-una-hoja-de-calculo/1/'
+        ],
+        [
+            'img/materials/pre-load-49.png',
+            'Hacer referencia a celdas de otras hojas en excel',
+            'https://exceltotal.com/hacer-referencia-a-celdas-de-otras-hojas-en-excel/'
+        ]
+    ],
+    [   //Slab 9
+        [
+            'img/materials/pre-load-55.png',
+            'Ordenamiento y filtración de datos',
+            'https://help.highbond.com/helpdocs/add-ins-excel/14/user-guide/es/Content/working_with_data/sort_filter_data.htm'
+        ],
+        [
+            'img/materials/pre-load-56.png',
+            'Filtros en Excel',
+            'https://exceltotal.com/filtros-en-excel/'
+        ],
+        [
+            'img/materials/pre-load-57.png',
+            '¿Para qué sirven los filtros en Excel?',
+            'https://www.gerencie.com/para-que-sirven-los-filtros-en-excel.html'
+        ],
+        [
+            'img/materials/pre-load-58.png',
+            'Ordenar y filtrar datos en Excel',
+            'https://guiastematicas.bibliotecas.uc.cl/c.php?g=990565&p=7816616'
+        ]
+    ],
+    [   //Slab 10
+        [
+            'img/materials/pre-load-61.png',
+            'Excel 2016 ya permite el trabajo colaborativo a través de Office 365',
+            'https://www.softzone.es/2017/03/29/excel-2016-ya-permite-trabajo-colaborativo-traves-office-365/'
+        ],
+        [
+            'img/materials/pre-load-62.png',
+            'Compartir el libro de Excel con otros usuarios',
+            'https://support.microsoft.com/es-es/office/compartir-el-libro-de-excel-con-otros-usuarios-8d8a52bb-03c3-4933-ab6c-330aabf1e589'
+        ],
+        [
+            'img/materials/pre-load-63.png',
+            'Bloquear o desbloquear áreas específicas de una hoja de cálculo protegida',
+            'https://support.microsoft.com/es-es/office/bloquear-o-desbloquear-%C3%A1reas-espec%C3%ADficas-de-una-hoja-de-c%C3%A1lculo-protegida-75481b72-db8a-4267-8c43-042a5f2cd93a'
+        ],
+        [
+            'img/materials/pre-load-64.png',
+            'Proteger un archivo de Excel',
+            'https://support.microsoft.com/es-es/office/proteger-un-archivo-de-excel-7359d4ae-7213-4ac2-b058-f75e9311b599'
+        ]
+    ]
+];
+
+//PDF descargable
+$materialPdf = [
+    
+];
+
+//Vídeo descargable
+$materialVideo = [
+    [   //Slab 1
+        [
+            'img/materials/pre-load-4.png',
+            'Creando una hoja de cálculo nueva',
+            'assets/videos/Creando_una_hoja_de_cálculo_nueva.mp4',
+            'Creando_una_hoja_de_cálculo_nueva.mp4'
+        ],
+        [
+            'img/materials/pre-load-5.png',
+            'Mi primera interacción con Excel',
+            'assets/videos/Excel. Mi primera interacción con Excel.mp4',
+            'Excel. Mi primera interacción con Excel.mp4'
+        ]
+    ],
+    [   //Slab 2
+        [
+            'img/materials/pre-load-9.png',
+            '1. La función de autocompletado en Excel',
+            'assets/videos/1. La función de autocompletado en Excel.mp4',
+            '1. La función de autocompletado en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-9.png',
+            '2. Cómo deshacer un cambio en Excel',
+            'assets/videos/2. Cómo deshacer un cambio en Excel.mp4',
+            '2. Cómo deshacer un cambio en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-9.png',
+            '3. Añadir comentarios a una hoja de Excel',
+            'assets/videos/3. Añadir comentarios a una hoja de Excel.mp4',
+            '3. Añadir comentarios a una hoja de Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-9.png',
+            '4. Cómo guardar y exportar hojas de cálculo',
+            'assets/videos/4. Cómo guardar y exportar hojas de cálculo.mp4',
+            '4. Cómo guardar y exportar hojas de cálculo.mp4'
+        ],
+        [
+            'img/materials/pre-load-9.png',
+            '5. Opciones de impresión para hojas de cálculo',
+            'assets/videos/5. Opciones de impresión para hojas de cálculo.mp4',
+            '5. Opciones de impresión para hojas de cálculo.mp4'
+        ]
+    ],
+    [   //Slab 3
+        [
+            'img/materials/pre-load-13.png',
+            'Creando fórmulas sencillas en Excel',
+            'assets/videos/Creando fórmulas sencillas en Excel.mp4',
+            'Creando fórmulas sencillas en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-13.png',
+            'La barra de fórmulas en Excel',
+            'assets/videos/La barra de fórmulas en Excel.mp4',
+            'La barra de fórmulas en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-13.png',
+            'Copiando fórmulas a celdas adyacentes',
+            'assets/videos/Copiando fórmulas a celdas adyacentes.mp4',
+            'Copiando fórmulas a celdas adyacentes.mp4'
+        ],
+        [
+            'img/materials/pre-load-14.png',
+            'Usando funciones IF y operadores relacionales',
+            'assets/videos/Usando funciones IF y operadores relacionales.mp4',
+            'Usando funciones IF y operadores relacionales.mp4'
+        ],
+        [
+            'img/materials/pre-load-14.png',
+            'Obtener datos de una tabla con la función BUSCARV',
+            'assets/videos/Obtener datos de una tabla con la función BUSCARV.mp4',
+            'Obtener datos de una tabla con la función BUSCARV.mp4'
+        ],
+        [
+            'img/materials/pre-load-14.png',
+            'Cómo utilizar la familia de funciones CONTAR.SI',
+            'assets/videos/Cómo utilizar la familia de funciones CONTAR.SI.mp4',
+            'Cómo utilizar la familia de funciones CONTAR.SI.mp4'
+        ]
+    ],
+    [   //Slab 4
+        [
+            'img/materials/pre-load-18.png',
+            'Estilos y fuentes tipográficas',
+            'assets/videos/Estilos y fuentes tipográficas.mp4',
+            'Estilos y fuentes tipográficas.mp4'
+        ],
+        [
+            'img/materials/pre-load-18.png',
+            'Ajustes y alineación de texto',
+            'assets/videos/Ajustes y alineación de texto.mp4',
+            'Ajustes y alineación de texto.mp4'
+        ],
+        [
+            'img/materials/pre-load-19.png',
+            'Bordes en una hoja de cálculo',
+            'assets/videos/Bordes en una hoja de cálculo.mp4',
+            'Bordes en una hoja de cálculo.mp4'
+        ],
+        [
+            'img/materials/pre-load-20.png',
+            'Explorando los formatos de datos',
+            'assets/videos/Explorando los formatos de datos.mp4',
+            'Explorando los formatos de datos.mp4'
+        ],
+        [
+            'img/materials/pre-load-21.png',
+            'Usando formatos condicionales',
+            'assets/videos/Usando formatos condicionales.mp4',
+            'Usando formatos condicionales.mp4'
+        ],
+        [
+            'img/materials/pre-load-21.png',
+            'Trabajo con tablas',
+            'assets/videos/Trabajo con tablas.mp4',
+            'Trabajo con tablas.mp4'
+        ],
+        [
+            'img/materials/pre-load-22.png',
+            'Cómo insertar imágenes y formas',
+            'assets/videos/Cómo insertar imágenes y formas.mp4',
+            'Cómo insertar imágenes y formas.mp4'
+        ]
+    ],
+    [   //Slab 5
+        [
+            'img/materials/pre-load-26.png',
+            'Cómo modificar filas y columnas',
+            'assets/videos/Cómo modificar filas y columnas.mp4',
+            'Cómo modificar filas y columnas.mp4'
+        ],
+        [
+            'img/materials/pre-load-27.png',
+            'Ajustes y alineación de texto',
+            'assets/videos/Ajustes y alineación de texto.mp4',
+            'Ajustes y alineación de texto.mp4'
+        ],
+        [
+            'img/materials/pre-load-28.png',
+            'Cómo buscar y reemplazar datos en una hoja de cálculo',
+            'assets/videos/Cómo buscar y reemplazar datos en una hoja de cálculo.mp4',
+            'Cómo buscar y reemplazar datos en una hoja de cálculo.mp4'
+        ]
+    ],
+    [   //Slab 6
+        [
+            'img/materials/pre-load-33.png',
+            'Explorando los tipos de gráficos',
+            'assets/videos/Explorando los tipos de gráficos.mp4',
+            'Explorando los tipos de gráficos.mp4'
+        ],
+        [
+            'img/materials/pre-load-34.png',
+            'Diseño y estilo de las gráficos',
+            'assets/videos/Diseño y estilo de las gráficos.mp4',
+            'Diseño y estilo de las gráficos.mp4'
+        ],
+        [
+            'img/materials/pre-load-35.png',
+            'Creación de sparklines',
+            'assets/videos/Creación de sparklines.mp4',
+            'Creación de sparklines.mp4'
+        ]
+    ],
+    [   //Slab 7
+        [
+            'img/materials/pre-load-42.png',
+            'Bloqueo y desbloqueo de paneles',
+            'assets/videos/Bloqueo y desbloqueo de paneles.mp4',
+            'Bloqueo y desbloqueo de paneles.mp4'
+        ],
+        [
+            'img/materials/pre-load-42.png',
+            'Cómo dividir la pantalla horizontal y verticalmente',
+            'assets/videos/Cómo dividir la pantalla horizontal y verticalmente.mp4',
+            'Cómo dividir la pantalla horizontal y verticalmente.mp4'
+        ],
+        [
+            'img/materials/pre-load-42.png',
+            'Cómo colapsar o expandir las vistas con esquemas',
+            'assets/videos/Cómo colapsar o expandir las vistas con esquemas.mp4',
+            'Cómo colapsar o expandir las vistas con esquemas.mp4'
+        ]
+    ],
+    [   //Slab 8
+        [
+            'img/materials/pre-load-50.png',
+            'Cómo agregar, renombrar y borrar hojas en un libro',
+            'assets/videos/Cómo agregar, renombrar y borrar hojas en un libro.mp4',
+            'Cómo agregar, renombrar y borrar hojas en un libro.mp4'
+        ],
+        [
+            'img/materials/pre-load-50.png',
+            'Cómo ligar libros y hojas de cálculo con fórmulas',
+            'assets/videos/Cómo ligar libros y hojas de cálculo con fórmulas.mp4',
+            'Cómo ligar libros y hojas de cálculo con fórmulas.mp4'
+        ],
+        [
+            'img/materials/pre-load-51.png',
+            'Localizando y manteniendo enlaces en Excel',
+            'assets/videos/Localizando y manteniendo enlaces en Excel.mp4',
+            'Localizando y manteniendo enlaces en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-52.png',
+            'Mostrar múltiples libros en pantalla',
+            'assets/videos/Mostrar múltiples libros en pantalla.mp4',
+            'Mostrar múltiples libros en pantalla.mp4'
+        ],
+        [
+            'img/materials/pre-load-53.png',
+            'Mover, copiar y agrupar hojas de cálculo',
+            'assets/videos/Mover, copiar y agrupar hojas de cálculo.mp4',
+            'Mover, copiar y agrupar hojas de cálculo.mp4'
+        ]
+    ],
+    [   //Slab 9
+        [
+            'img/materials/pre-load-58.png',
+            'Cómo eliminar datos duplicados en Excel',
+            'assets/videos/Cómo eliminar datos duplicados en Excel.mp4',
+            'Cómo eliminar datos duplicados en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-59.png',
+            'Cómo usar filtros en Excel',
+            'assets/videos/Cómo usar filtros en Excel.mp4',
+            'Cómo usar filtros en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-60.png',
+            'Dividiendo y combinando datos de columnas',
+            'assets/videos/Dividiendo y combinando datos de columnas.mp4',
+            'Dividiendo y combinando datos de columnas.mp4'
+        ],
+        [
+            'img/materials/pre-load-59.png',
+            'Ordenando datos en Excel',
+            'assets/videos/Ordenando datos en Excel.mp4',
+            'Ordenando datos en Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-58.png',
+            'Usar herramientas de validación de datos',
+            'assets/videos/Usar herramientas de validación de datos.mp4',
+            'Usar herramientas de validación de datos.mp4'
+        ]
+    ],
+    [   //Slab 10
+        [
+            'img/materials/pre-load-65.png',
+            'Cómo compartir libros de Excel',
+            'assets/videos/Cómo compartir libros de Excel.mp4',
+            'Cómo compartir libros de Excel.mp4'
+        ],
+        [
+            'img/materials/pre-load-65.png',
+            'Cómo proteger hojas y bloquear celdas',
+            'assets/videos/Cómo proteger hojas y bloquear celdas.mp4',
+            'Cómo proteger hojas y bloquear celdas.mp4'
+        ],
+        [
+            'img/materials/pre-load-65.png',
+            'Protegiendo libros en Excel',
+            'assets/videos/Protegiendo libros en Excel.mp4',
+            'Protegiendo libros en Excel.mp4'
+        ]
+    ],
 ];
 
 //-- Transcripciones --
@@ -595,18 +900,18 @@ $act1_Instructions = [
     ]
 ];
 
-//-- Herramientas Actividad Descibre --
+//-- Herramientas Actividad Descubre --
 $act1_tools = [
 /* Slab 1 */'<iframe src="https://lxlab.h5p.com/content/1291605514085572948/embed" aria-label="Slab 1_Estilos y formatos de datos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 2 */'<iframe width="470" height="404" src="https://edpuzzle.com/embed/media/624b6fdb906e6042c0da6e2d" frameborder="0" allowfullscreen></iframe>',
+/* Slab 2 */'<iframe id="puzzleVideo" src="https://edpuzzle.com/embed/media/624b6fdb906e6042c0da6e2d" frameborder="0" allowfullscreen></iframe>',
 /* Slab 3 */'<iframe src="https://lxlab.h5p.com/content/1291605567828035148/embed" aria-label="Slab3_Fórmulas y funciones básicas" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
 /* Slab 4 */'<iframe src="https://lxlab.h5p.com/content/1291605571039519918/embed" aria-label="slab4_Estilos y formatos de datos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 5 */'<iframe width="470" height="404" src="https://edpuzzle.com/embed/media/624b7d0e3ad61f42b23a830c" frameborder="0" allowfullscreen></iframe>',
+/* Slab 5 */'<iframe id="puzzleVideo" src="https://edpuzzle.com/embed/media/624b7d0e3ad61f42b23a830c" frameborder="0" allowfullscreen></iframe>',
 /* Slab 6 */'<iframe src="https://lxlab.h5p.com/content/1291605580242862948/embed" aria-label="Slab6_Gráficos básicos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 7 */'<iframe width="470" height="404" src="https://edpuzzle.com/embed/media/624c8121576a8342f8e26f91" frameborder="0" allowfullscreen></iframe>',
-/* Slab 8 */'<iframe width="470" height="404" src="https://edpuzzle.com/embed/media/624c81dd544bb34306f98d9a" frameborder="0" allowfullscreen></iframe>',
+/* Slab 7 */'<iframe id="puzzleVideo" src="https://edpuzzle.com/embed/media/624c8121576a8342f8e26f91" frameborder="0" allowfullscreen></iframe>',
+/* Slab 8 */'<iframe id="puzzleVideo" src="https://edpuzzle.com/embed/media/624c81dd544bb34306f98d9a" frameborder="0" allowfullscreen></iframe>',
 /* Slab 9 */'<iframe src="https://lxlab.h5p.com/content/1291606247399969428/embed" aria-label="Slab9_Administración de datos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 10*/'<iframe width="470" height="404" src="https://edpuzzle.com/embed/media/624c889fd89ffa42f176e7ca" frameborder="0" allowfullscreen></iframe>'
+/* Slab 10*/'<iframe id="puzzleVideo" src="https://edpuzzle.com/embed/media/624c889fd89ffa42f176e7ca" frameborder="0" allowfullscreen></iframe>'
 ];
 
 //-- Instrucciones Actividad Demuestra --
@@ -1498,22 +1803,22 @@ $act3_forms =
 //-- Cierre SLAB --
 $act3_final_message = 
 [
-    "¡Slab finalizado! Has <strong>aprendido los conceptos elementales de Excel.</strong> Recuerda que practicar lo aprendido es crucial para lograr el dominio de cualquier tema.",
-    "¡Te felicitamos por terminar este Slab! Ahora conoces más sobre <strong>los libros y hojas de cálculo en Excel.</strong>",
-    "¡Lo lograste! Has completado esta experiencia de aprendizaje sobre <strong>el uso de fórmulas y funciones en Excel.</strong>",
-    "¡Slab finalizado! Recuerda que practicar lo aprendido sobre <strong>los estilos y formatos de datos en Excel</strong> es crucial para dominarlo.",
-    "¡Enhorabuena! 90 minutos fueron suficientes para conocer sobre <strong>los ajustes de una hoja de cálculo</strong> ¡Felicidades por terminar este Slab!",
-    "¡Lo has hecho muy bien! Si quieres repasar <strong>los conceptos básicos de gráficas,</strong> puedes regresar al Slab las veces que lo desees.",
-    "¡Enhorabuena! 90 minutos fueron suficientes para conocer sobre <strong>ajuste de la vista en las hojas de cálculo en Excel,</strong> ¡Felicidades por terminar este Slab!",
-    "¡Slab finalizado! Has aprendido a <strong>manejar múltiples libros y hojas de cálculo.</strong> Recuerda que practicar lo aprendido es crucial para lograr el dominio de cualquier tema.",
-    "¡Un paso más rumbo al éxito! Ahora sabes más sobre <strong>la gestión de los datos.</strong> Sigue aprendiendo.",
-    "¡Felicidades aprendedor! Has terminado con éxito este Slab, donde conociste más acerca de la <strong>seguridad y trabajo colaborativo.</strong>",
+    "¡Slab finalizado! Has <highlight>aprendido los conceptos elementales de Excel.</highlight> Recuerda que practicar lo aprendido es crucial para lograr el dominio de cualquier tema.",
+    "¡Te felicitamos por terminar este Slab! Ahora conoces más sobre <highlight>los libros y hojas de cálculo en Excel.</highlight>",
+    "¡Lo lograste! Has completado esta experiencia de aprendizaje sobre <highlight>el uso de fórmulas y funciones en Excel.</highlight>",
+    "¡Slab finalizado! Recuerda que practicar lo aprendido sobre <highlight>los estilos y formatos de datos en Excel</highlight> es crucial para dominarlo.",
+    "¡Enhorabuena! 90 minutos fueron suficientes para conocer sobre <highlight>los ajustes de una hoja de cálculo</highlight> ¡Felicidades por terminar este Slab!",
+    "¡Lo has hecho muy bien! Si quieres repasar <highlight>los conceptos básicos de gráficas,</highlight> puedes regresar al Slab las veces que lo desees.",
+    "¡Enhorabuena! 90 minutos fueron suficientes para conocer sobre <highlight>ajuste de la vista en las hojas de cálculo en Excel,</highlight> ¡Felicidades por terminar este Slab!",
+    "¡Slab finalizado! Has aprendido a <highlight>manejar múltiples libros y hojas de cálculo.</highlight> Recuerda que practicar lo aprendido es crucial para lograr el dominio de cualquier tema.",
+    "¡Un paso más rumbo al éxito! Ahora sabes más sobre <highlight>la gestión de los datos.</highlight> Sigue aprendiendo.",
+    "¡Felicidades aprendedor! Has terminado con éxito este Slab, donde conociste más acerca de la <highlight>seguridad y trabajo colaborativo.</highlight>",
 ];
 
 //-- Cierre Deck --
-$Diagnostic_message = 'Has concluido con éxito el Deck de <strong>Excel para principiantes: su eficiencia y su uso.</strong>
+$Diagnostic_message = 'Has concluido con éxito el Deck de <highlight>Excel para principiantes: su eficiencia y su uso.</highlight>
     <br><br>
-    Esperamos que las actividades realizadas en esta experiencia de aprendizaje hayan contribuido al desarrollo de la competencia: <strong>Utiliza Excel básico para facilitar sus actividades en diferentes áreas laborales y/o personales.</strong>
+    Esperamos que las actividades realizadas en esta experiencia de aprendizaje hayan contribuido al desarrollo de la competencia: <highlight>Utiliza Excel básico para facilitar sus actividades en diferentes áreas laborales y/o personales.</highlight>
     <br><br>
     Estamos seguros de que lo aprendido será de gran ayuda para tu éxito y crecimiento.'
 

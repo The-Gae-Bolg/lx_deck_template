@@ -1,5 +1,5 @@
 // Function to create the cookie 
-function createCookie(name, value, days) { 
+export function createCookie(name, value, days) { 
     var expires; 
     if (days) { 
         var date = new Date(); 

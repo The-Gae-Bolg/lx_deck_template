@@ -21,6 +21,26 @@
     font-size: calc(.6em + .6vw);
 }
 
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position:relative;
+    padding:0px;
+}
+.close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#fff;
+    opacity:1;
+}
+
 header{
     background:#FCF7EE;
 }
@@ -127,8 +147,8 @@ a i {
 
 .act-card a {
     position: absolute;
-    left: 20px;
-    bottom:15px;
+    left: -5px;
+    bottom:-35px;
 }
 
 .act {

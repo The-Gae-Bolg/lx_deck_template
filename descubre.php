@@ -106,7 +106,7 @@
           <?php }?>
         </ol>
       </div>
-      <div class="puzzle">
+      <div class="puzzle text-center">
         <?php echo $act1_tools[$slabNum-1]?>
       </div>
       <div class="d-flex justify-content-center align-items-center my-4">
@@ -125,5 +125,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPHc923lS+#/q+6bN6D9Ld+TV9lgYG/Ok/default" crossorigin="anonymous"></script>
+    <script src="js/puzzleResizing.js"></script>
   </body>
 </html>
