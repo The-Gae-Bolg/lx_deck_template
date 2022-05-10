@@ -49,6 +49,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Descubre</title>
     <!--Bootsrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+      crossorigin="anonymous">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -106,7 +109,7 @@
           <?php }?>
         </ol>
       </div>
-      <div class="puzzle text-center">
+      <div class="embed-responsive embed-responsive-16by9">
         <?php echo $act1_tools[$slabNum-1]?>
       </div>
       <div class="d-flex justify-content-center align-items-center my-4">
@@ -125,7 +128,5 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPHc923lS+#/q+6bN6D9Ld+TV9lgYG/Ok/default" crossorigin="anonymous"></script>
-    <script src="js/puzzleResizing.js"></script>
   </body>
 </html>
