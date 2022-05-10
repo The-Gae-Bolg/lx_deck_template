@@ -1,6 +1,6 @@
 <?php
-    define("HOST", "localhost");
-    define("USER", "root");
-    define("PASSWORD", "root");
-    define("DB", "demo");
+    define("HOST", "");
+    define("USER", "");
+    define("PASSWORD", "");
+    define("DB", "");
 ?>
