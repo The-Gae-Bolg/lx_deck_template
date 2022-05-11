@@ -1,7 +1,30 @@
 $(document).ready(function() {
 
-  // Gets the video src from the data-src on each button
+  /*---------Carrucel-----------------------*/
+
+  $('#recipeCarousel').carousel({
+    interval: 10000
+  })
   
+  $('.carousel .carousel-item').each(function(){
+      var minPerSlide = 3;
+      var next = $(this).next();
+      if (!next.length) {
+      next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+      
+      for (var i=0;i<minPerSlide;i++) {
+          next=next.next();
+          if (!next.length) {
+            next = $(this).siblings(':first');
+          }
+          
+          next.children(':first-child').clone().appendTo($(this));
+        }
+  });
+
+/*---------Modal-----------------------*/
   var $videoSrc;  
   $('.video-btn').click(function() {
       $videoSrc = $(this).data( "src" );
@@ -10,7 +33,7 @@ $(document).ready(function() {
 
   $('.close').click(function() {
       $('#myModal').modal('hide');
-});
+  });
     
   // when the modal is opened autoplay it  
 
@@ -24,8 +47,7 @@ $(document).ready(function() {
   $('#myModal').on('hide.bs.modal', function (e) {
       // a poor man's stop video
       $("#video").attr('src',""); 
-  }) 
-          
+  })           
 // document ready  
 });
   

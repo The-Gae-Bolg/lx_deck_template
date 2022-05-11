@@ -224,7 +224,7 @@ a i {
     }*/
 
     .materiales img {
-        width: 50%;
+        width: 100%;
     }
 
     .materiales-video img {
@@ -323,4 +323,53 @@ a i {
 
 .hidden{
     display: none !important;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .card{
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .btn-responsive{
+        display: block !important;
+    }
+    .btn-responsive a{
+        margin: 10px !important;
+    }
+    .btn-responsive a, .btn-responsive button{
+        font-size: calc(.48em + .48vw);
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
 }
