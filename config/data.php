@@ -903,15 +903,15 @@ $act1_Instructions = [
 //-- Herramientas Actividad Descubre --
 $act1_tools = [
 /* Slab 1 */'<iframe src="https://lxlab.h5p.com/content/1291605514085572948/embed" aria-label="Slab 1_Estilos y formatos de datos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 2 */'<iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624b6fdb906e6042c0da6e2d" frameborder="0" allowfullscreen></iframe>',
+/* Slab 2 */'<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624b6fdb906e6042c0da6e2d" frameborder="0" allowfullscreen></iframe></div>',
 /* Slab 3 */'<iframe src="https://lxlab.h5p.com/content/1291605567828035148/embed" aria-label="Slab3_Fórmulas y funciones básicas" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
 /* Slab 4 */'<iframe src="https://lxlab.h5p.com/content/1291605571039519918/embed" aria-label="slab4_Estilos y formatos de datos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 5 */'<iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624b7d0e3ad61f42b23a830c" frameborder="0" allowfullscreen></iframe>',
+/* Slab 5 */'<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624b7d0e3ad61f42b23a830c" frameborder="0" allowfullscreen></iframe></div>',
 /* Slab 6 */'<iframe src="https://lxlab.h5p.com/content/1291605580242862948/embed" aria-label="Slab6_Gráficos básicos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 7 */'<iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624c8121576a8342f8e26f91" frameborder="0" allowfullscreen></iframe>',
-/* Slab 8 */'<iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624c81dd544bb34306f98d9a" frameborder="0" allowfullscreen></iframe>',
+/* Slab 7 */'<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624c8121576a8342f8e26f91" frameborder="0" allowfullscreen></iframe></div>',
+/* Slab 8 */'<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624c81dd544bb34306f98d9a" frameborder="0" allowfullscreen></iframe></div>',
 /* Slab 9 */'<iframe src="https://lxlab.h5p.com/content/1291606247399969428/embed" aria-label="Slab9_Administración de datos" width="1088" height="637" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay *; geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe><script src="https://lxlab.h5p.com/js/h5p-resizer.js" charset="UTF-8"></script>',
-/* Slab 10*/'<iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624c889fd89ffa42f176e7ca" frameborder="0" allowfullscreen></iframe>'
+/* Slab 10*/'<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="https://edpuzzle.com/embed/media/624c889fd89ffa42f176e7ca" frameborder="0" allowfullscreen></iframe></div>'
 ];
 
 //-- Instrucciones Actividad Demuestra --

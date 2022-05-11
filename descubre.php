@@ -109,7 +109,7 @@
           <?php }?>
         </ol>
       </div>
-      <div class="embed-responsive embed-responsive-16by9">
+      <div class="text-center">
         <?php echo $act1_tools[$slabNum-1]?>
       </div>
       <div class="d-flex justify-content-center align-items-center my-4">
