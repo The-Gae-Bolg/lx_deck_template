@@ -325,18 +325,6 @@ a i {
     display: none !important;
 }
 
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-    .card{
-        width: 90% !important;
-    }
-}
-
 @media (max-width: 1300px) {
     .btn-responsive{
         display: block !important;
@@ -345,7 +333,22 @@ a i {
         margin: 10px !important;
     }
     .btn-responsive a, .btn-responsive button{
-        font-size: calc(.48em + .48vw);
+        font-size: calc(.35em + .40vw);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .btn-responsive a, .btn-responsive button{
+        font-size: calc(.7em + .7vw);
     }
 }
 

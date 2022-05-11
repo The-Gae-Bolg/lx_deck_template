@@ -233,14 +233,14 @@
 
   <div class="row mx-auto my-auto">
     <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-      <div class="carousel-inner w-100 text-center" role="listbox">
+      <div class="carousel-inner w-100 text-center p-1" role="listbox">
 
       <!--------------Video Youtube------------->
       <?php if(isset($materialYoutube[$slabNum-1])) {?>
         <?php for($j = 0;$j<count($materialYoutube[$slabNum-1]);$j++){?>
           <div class="<?php if($first_material) { echo "carousel-item active"; $first_material=false;} else {echo "carousel-item";}?>">
             <div class="col-md-4">
-              <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width: 20vw;">
+              <div class="card mt-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="">
                 <img class="card-img-top rounded-0" src="<?php echo $materialYoutube[$slabNum-1][$j][0]?>" alt="Card image cap">
                 <h5 class="card-title text-center mt-4"><?php echo $materialYoutube[$slabNum-1][$j][1]?></h5>
                 <div class="btn-responsive d-flex justify-content-around align-items-center my-4" height="50px">
@@ -260,7 +260,7 @@
         <?php for($j = 0;$j<count($materialPage[$slabNum-1]);$j++){?>
           <div class="<?php if($first_material) { echo "carousel-item active"; $first_material=false;} else {echo "carousel-item";}?>">
             <div class="col-md-4">
-              <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width: 20vw;">
+              <div class="card mt-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="">
                 <img class="card-img-top rounded-0" src="<?php echo $materialPage[$slabNum-1][$j][0]?>" alt="Card image cap">
                 <h5 class="card-title text-center mt-4"><?php echo $materialPage[$slabNum-1][$j][1]?></h5>
                 <div class="btn-responsive d-flex justify-content-around align-items-center my-4" height="50px">
@@ -278,7 +278,7 @@
         <?php for($j = 0;$j<count($materialPdf[$slabNum-1]);$j++){?>
           <div class="<?php if($first_material) { echo "carousel-item active"; $first_material=false;} else {echo "carousel-item";}?>">
             <div class="col-md-4">
-              <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width: 20vw;">
+              <div class="card mt-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="">
                 <img class="card-img-top rounded-0" src="<?php echo $materialPdf[$slabNum-1][$j][0]?>" alt="Card image cap">
                 <h5 class="card-title text-center mt-4"><?php echo $materialPdf[$slabNum-1][$j][1]?></h5>
                 <div class="btn-responsive d-flex justify-content-around align-items-center my-4" height="50px">
@@ -297,7 +297,7 @@
         <?php for($j = 0;$j<count($materialVideo[$slabNum-1]);$j++){?>
           <div class="<?php if($first_material) { echo "carousel-item active"; $first_material=false;} else {echo "carousel-item";}?>">
             <div class="col-md-4">
-              <div class="card m-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="width: 20vw;">
+              <div class="card mt-4 shadow p-3 mb-5 bg-white rounded overflow-hidden" style="">
                 <img class="card-img-top rounded-0" src="<?php echo $materialVideo[$slabNum-1][$j][0]?>" alt="Card image cap">
                 <h5 class="card-title text-center mt-4"><?php echo $materialVideo[$slabNum-1][$j][1]?></h5>
                 <div class="btn-responsive d-flex justify-content-around align-items-center my-4" height="50px">
